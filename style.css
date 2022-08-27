@@ -1,0 +1,78 @@
+body {
+    background-color: #F1F1F1;
+}
+.nav {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 10px 2px grey;
+
+}
+
+.nav-item {
+    position: relative;
+}
+
+
+.nav-link {
+    display: block;
+    padding: 20px 15px;
+    margin: 0;
+    color: #314E52;
+    text-decoration: none;
+}
+
+.div-nav {
+    margin-left: 62%;
+    border-bottom: 1px solid #E7E6E1;
+    display: flex;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 14px;
+    
+}
+
+.data-diri {
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.pp {
+    border-radius: 1000px;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ket {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ket2 {
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+} 
+
+
+.form-data {
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+
+}
+
+.form-data div p {
+    margin-bottom: -1px;
+    margin-left: 9px;
+}
