@@ -6,115 +6,126 @@
         
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>Alfa Sean | Challenge 1</title>
-        <navbar class="nav">
-            <div class="div-nav">
-                <div class="nav-item">
-                    <a class="nav-link" href="#home">HOME</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#product">PRODUCT</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#gallery">GALLERY</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#blog">BLOG</a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#inventory">INVENTORY</a>
-                </div>
-              </div>
 
-
-              
-            <!-- <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#product">PRODUCT</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#inventory/">INVENTORY</a></li>
-            </ul> -->
-        </navbar>
+         <!-- Bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+        <title>Alfa Sean | Challenge </title>
+  
         <link rel="stylesheet" href="style.css">
+        
     </head>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home" style="color: #314E52;">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product" style="color: #314E52;">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery" style="color: #314E52;">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog" style="color: #314E52;">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#inventory" style="color: #314E52;">INVENTORY</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Akhir Navbar -->
+
+
+
     <body>
         <div class="data-diri">
             <div>
-                <img class="pp" src="img/pp.jpeg" alt="gambar">
+                <img class="pp" src="img/pp2.jpg" alt="gambar">
             </div>
             <div class="ket">
-                <h1>
+                <h1 id="text-nama">
                     <b>Alfa Sean</b>
                 </h1>
-                <p style="color: gray;">Front End Developer</p>
-                <button type="button" class="btn btn-primary">Kontak</button>
+                <p style="color: gray;" id="text-role">Front End Developer</p>
+                <button type="button" class="btn btn-primary" id="buttonEdit">Edit</button>
                 <button type="button" class="btn btn-light" style="color: green;">Resume</button>
             </div>
             <div class="ket2">
                 <div style="display: flex;">
                     <p><b> Availability</b></p>
-                    <p style="margin-left : 38px; color: gray;"">Full Time</p>
+                    <p style="margin-left : 30px; color: gray;" id="text-availability">Full Time</p>
                 </div>
                 <div id="ket" style="display: flex;">
                     <p><b> Usia</b></p>
-                    <p style="margin-left : 85px; color: gray;"">22</p>
+                    <p id=text-usia style="margin-left : 85px; color: gray;">22</p>
                 </div>
                 <div id="ket" style="display: flex;">
                     <p><b> Lokasi</b></p>
-                    <p style="margin-left : 71px; color: gray;"">Manado</p>
+                    <p style="margin-left : 71px; color: gray;" id="text-lokasi">Manado</p>
                 </div>
                 <div id="ket" style="display: flex;">
                     <p><b> Pengalaman</b></p>
-                    <p style="margin-left : 30px; color: gray;"">2</p>
+                    <p style="margin-left : 30px; color: gray;" id="text-pengalaman">2 tahun</p>
                 </div>
                 <div id="ket" style="display: flex;">
                     <p><b> email</b></p>
-                    <p style="margin-left : 80px; color: gray;">alfasean22@gmail.com</p>
+                    <p style="margin-left : 80px; color: gray;" id="text-email">alfasean22@gmail.com</p>
                 </div>
             </div>
          </div>
-         
-    <form class="form-data">
+     
+    <!-- Form  -->
+    <form id="form-data" onsubmit="handleSubmit(event)">
         <div>
-            <p><b>Nama</b></p>
+            <p class="p-form"><b>Nama</b></p>
             <label for="nama"></label>
-            <input type="text" name="nama" style="width: 97%; margin-left: 5px; margin-right: 5px;">
+            <input id="input-nama" type="text" name="nama" required style="width: 97%; margin-left: 5px; margin-right: 5px;">
         </div>
         <div>
-            <p><b>Role</b></p>
+            <p class="p-form"><b>Role</b></p>
             <label for="role"></label>
-            <input type="text" name="role" style="width: 97%; margin-left: 5px; margin-right: 5px;">
+            <input id="input-role" type="text" name="role" required style="width: 97%; margin-left: 5px; margin-right: 5px;">
         </div>
         <div>
-            <p><b>Availability</b></p>
+            <p class="p-form"><b>Availability</b></p>
             <label for="availability"></label>
-            <input type="text" name="availability" style="width: 97%; margin-left: 5px; margin-right: 5px;">
+            <input id="input-availability" type="text" name="availability" required style="width: 97%; margin-left: 5px; margin-right: 5px;">
         </div>
         <div>
-            <p><b>Usia</b></p>
+            <p class="p-form"><b>Usia</b></p>
             <label for="usia"></label>
-            <input type="number" name="usia" style="width: 97%; margin-left: 5px; margin-right: 5px;">
+            <input id="input-usia" type="number" name="usia" required style="width: 97%; margin-left: 5px; margin-right: 5px;">
         </div>
         <div>
-            <p><b>Lokasi</b></p>
+            <p class="p-form"><b>Lokasi</b></p>
             <label for="lokasi"></label>
-            <input type="text" name="lokasi" style="width: 97%; margin-left: 5px; margin-right: 5px;">
+            <input id="input-lokasi" type="text" name="lokasi" required style="width: 97%; margin-left: 5px; margin-right: 5px;">
         </div>
         <div>
-            <p><b>Years Experience</b></p>
-            <label for="yearsexp"></label>
-            <input type="text" name="yearsexp" style="width: 97%; margin-left: 5px; margin-right: 5px;"> 
+            <p class="p-form"><b>Years Experience</b></p>
+            <label for="pengalaman"></label>
+            <input id="input-pengalaman" type="text" name="pengalaman" required style="width: 97%; margin-left: 5px; margin-right: 5px;"> 
         </div>
         <div>
-            <p><b>Email</b></p>
+            <p class="p-form"><b>Email</b></p>
             <label for="email"></label>
-            <input type="text" name="email" style="width: 97%; margin-left: 5px; margin-right: 5px; margin-bottom: 10px;">
+            <input id="input-email" type="text" name="email" required style="width: 97%; margin-left: 5px; margin-right: 5px; margin-bottom: 10px;">
         </div>
         <!-- <input type="submit" name="Sumbit" style="width: 98%; margin-left: 5px; margin-right: 5px; background-color: green; color: white;"> -->
-        <div class="btn-group" role="group" aria-label="Basic example" style="width: 97%; margin-left: 10px; margin-right: 10px;">
-            <button type="button" class="btn btn-success">SUBMIT</button>
-          </div>
+        <div class="btn-group" role="group" aria-label="Basic example" style="width: 97%; margin-left: 10px; margin-right: 10px; margin-bottom: 20px;">
+            <button type="submit" class="btn btn-success" id="btn-submit">SUBMIT</button>
+        </div>
         <form>
+        <!-- Akhir Form -->
+        
+        <script src="index.js"></script>
     </body>
 </html>
